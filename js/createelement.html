@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="writingTools">
+        <li>Pen</li>
+        <li id="pencil">Pencil</li>
+    </ul>
+    <p>Click the button to aooend an item to the end of the list.</p>
+    <button onclick="myMethod()">Append</button>
+    <button onclick="removeList()">Remove list</button>
+    <script>
+        function myMethod(){
+            var node = document.createElement('li');
+            var text = document.createTextNode("Color Pencil");
+            node.appendChild(text);
+            document.getElementById('writingTools').appendChild(node);
+        }
+        function removeList(){
+            var ele = document.getElementById("pencil");
+            ele.parentNode.removeChild(ele);
+        }
+    </script>
+</body>
+</html>

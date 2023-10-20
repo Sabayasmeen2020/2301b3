@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="lead" id="paragraph" data-para="demo">Lorem ipsum dolor sit amet.</p>
+        <a href="#" onclick="getsport(this)" data-sport-name="Football">football</a>
+        <a href="#" id="tennis" onclick="getsport(this)" data-sport-name="Tennis" data-sport-category="abc">tennis</a>
+
+    <p>Lorem, ipsum dolor.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    <p>Lorem adipisicing.</p>
+
+
+    <h2 class="heading">heading 1</h2>
+    <h2 class="heading">heading 2</h2>
+    <h2 class="heading">heading 3</h2>
+    <h2 class="heading">heading 4</h2>
+    <h2 class="heading">heading 5</h2>
+
+
+    <p name="abc">Lorem, ipsum dolor.</p>
+    <p name="abc">Lorem, ipsum dolor.</p>
+    <p name="abc">Lorem, ipsum dolor.</p>
+
+    <script>
+        function getsport(sport){
+            var name = sport.getAttribute("data-sport-name");
+            var cat = sport.getAttribute("data-sport-category");
+            alert("sport is "+name+ " and its category is "+cat)
+        }
+
+        // var tennis = document.getElementById('tennis');
+        // console.log(tennis);
+        // console.log(tennis.getAttribute("data-sport-name"));
+
+
+        // var paragraph = document.getElementsByTagName('p');
+        // console.log(paragraph[1]);
+
+        // var heading = document.getElementsByClassName('heading');
+        // console.log(heading);
+
+        // var head = document.querySelectorAll('.heading');
+        // var head = document.getElementsByName('abc');
+        // console.log(head);
+
+        
+
+
+
+
+    </script>
+</body>
+</html>

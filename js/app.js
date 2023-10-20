@@ -1,0 +1,1 @@
+var a=5;console.log(a);var Person=function(){function e(e,o){this.name=e,this.age=o}return e.prototype.greeting=function(){console.log("Hello "+this.name),console.log(this.name+"your age is "+this.age)},e}(),obj=new Person("Ali",12);obj.greeting();var obj1=new Person("Ahmed",10);obj1.greeting();
